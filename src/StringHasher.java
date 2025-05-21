@@ -26,11 +26,11 @@ public class StringHasher {
         int m = 0;
         int n = s.length();
 
-        for (int i = 0; i > s.length(); i++)
+        for (int i = 0; i < s.length(); i++)
         {
             m += s.charAt(i) * Math.pow(31, n-(i+1));
         }
-        return 0;
+        return m;
     }
 
     public static void main(String[] args) 
